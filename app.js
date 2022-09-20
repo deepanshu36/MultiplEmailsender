@@ -10,13 +10,14 @@ var transport=nodemailer.createTransport(
     }
 )
 // send out mail
+var emails=['pg3362474@gmail.com','gauravkaushiknitr@gmail.com','radhe9534990887@gmail.com']
 
 var mailoptions={
      
     from:'deepanshuk36@gmail.com',
-    to:'radhe9534990887@gmail.com',
-    subject:'hello test email from deepanshu',
-    text:'this is sent from nodejs project'
+    to:emails,
+    subject:'dont mine this email i am still testing',
+    text:'https://github.com/deepanshu36/emailsender'
 
 }
 transport.sendMail(mailoptions,function(error,info)
